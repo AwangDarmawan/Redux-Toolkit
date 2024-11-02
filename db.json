@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Baju 1",
+      "price": 121
+    },
+    {
+      "id": "2",
+      "title": "Baju2",
+      "price": 122
+    },
+    {
+      "id": "3",
+      "title": "Baju3",
+      "price": 123
+    },
+    {
+      "id": "b9ad",
+      "title": "Baju 4",
+      "price": "233"
+    }
+  ]
+}

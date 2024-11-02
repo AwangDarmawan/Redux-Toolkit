@@ -13,7 +13,7 @@ function Awal() {
            
             <button className="btn-primary" onClick={() => dispatch (increment())}>Increment</button>
             <span>{count}</span>
-            <button className="bg-red-500 rounded-full h-10 w-50 px-5 text-white" onClick={() => dispatch (decrement())}>Increment</button>
+            <button className="bg-red-500 rounded-full h-10 w-50 px-5 text-white" onClick={() => dispatch (decrement())}>Decrement</button>
         </div>
       </div>
     </>
