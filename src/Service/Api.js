@@ -1,13 +1,13 @@
 import axios from "axios";
-const API_URL =  import.meta.env.VITE_BASE_URL;
+const port =  import.meta.env.VITE_PORT;
 export const fetchData = async () => {
-        const response = await axios.get(`${API_URL}/products`);
+        let response = await axios.get(`${port}/products`);
         return response.data;
     
 };
 
 export const CreateData = async ({title,price}) => {
-    const response = await axios.post(`${API_URL}/products`,{
+    const response = await axios.post(`${port}/products`,{
         title,
         price
     });
@@ -16,7 +16,7 @@ export const CreateData = async ({title,price}) => {
 };
 
 export const UpdateData = async ({id,title,price}) => {
-    const response = await axios.patch(`${API_URL}/products/${id}`
+    const response = await axios.patch(`${port}/products/${id}`
     ,{
         title,
         price
@@ -27,7 +27,7 @@ export const UpdateData = async ({id,title,price}) => {
 };
 
 export const Delete = async (id) => {
-     await axios.delete(`${API_URL}products/${id}`);
+     await axios.delete(`${port}/products/${id}`);
     return id;
 
 };
